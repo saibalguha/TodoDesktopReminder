@@ -1,5 +1,5 @@
-Markdown
-# To-Do Desktop Reminder for Windows
+﻿# To-Do Desktop Reminder for Windows
+
 A lightweight, background desktop application built with Python and Tkinter that reminds you of your pending tasks every 6 hours and whenever you unlock your Windows screen.
 
 ---
@@ -18,23 +18,20 @@ A lightweight, background desktop application built with Python and Tkinter that
 * **Periodic Reminders:** Automatically pops up every 6 hours to keep your tasks on track.
 * **Unlock Trigger:** Pops up immediately when you unlock your Windows screen (`Win + L` -> Password).
 * **Easy Management:** Add, modify, delete, and reorder tasks (▲ / ▼).
-* **Automatic Backups:** Generates daily timestamped JSON backups at 9:00 AM.
+* **Automatic Backups:** Generates daily timestamped JSON backups at 9:00 AM in `%APPDATA%`.
 * **Single Instance Protection:** Prevents duplicate background processes from running.
-* **System Tray Support:** Runs quietly in the system tray when closed (`X`).
 
 ---
 
 ## 🔧 Building from Source
 
-If you want to run or modify the Python code directly:
-
 ```bash
 # Clone the repository
-git clone [https://github.com/saibalguha/TodoDesktopReminder.git](https://github.com/YOUR_GITHUB_USERNAME/TodoDesktopReminder.git)
+git clone [https://github.com/YOUR_GITHUB_USERNAME/TodoDesktopReminder.git](https://github.com/YOUR_GITHUB_USERNAME/TodoDesktopReminder.git)
 cd TodoDesktopReminder
 
 # Install dependencies
-pip install pillow pystray plyer
+pip install pillow pystray plyer pywin32
 
 # Run the app
 python todo_app.py
