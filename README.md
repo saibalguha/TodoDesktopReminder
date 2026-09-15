@@ -22,19 +22,6 @@ A lightweight, background desktop application built with Python and Tkinter that
 * **Single Instance Protection:** Prevents duplicate background processes from running.
 
 ---
-
-## 🔧 Building from Source
-
-```bash
-# Clone the repository
-git clone [https://github.com/YOUR_GITHUB_USERNAME/TodoDesktopReminder.git](https://github.com/YOUR_GITHUB_USERNAME/TodoDesktopReminder.git)
-cd TodoDesktopReminder
-
-# Install dependencies
-pip install pillow pystray plyer pywin32
-
-# Run the app
-python todo_app.py
-
-# Build your own .exe
-python -m PyInstaller --noconsole --onefile todo_app.py
+## 🚀 Sep 15, 2026 - Features added
+1. The App can now be started by clicking icon in system tray
+2. The App can also be started (if closed earlier) by shortcut key combination Alt + R (R = Reminder)
